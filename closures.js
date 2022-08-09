@@ -187,7 +187,10 @@ function cycleIterator(array) {
 
 // CHALLENGE 10
 function defineFirstArg(func, arg) {
-
+	function inner(...values) {
+    return func(arg, ...values);
+  }
+  return inner;
 }
 
 // /*** Uncomment these to check your work! ***/
@@ -198,7 +201,10 @@ function defineFirstArg(func, arg) {
 
 // CHALLENGE 11
 function dateStamp(func) {
+	function inner(...args) {
 
+  }
+  return inner;
 }
 
 // /*** Uncomment these to check your work! ***/
